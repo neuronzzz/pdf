@@ -1,8 +1,9 @@
 import pdfplumber
 
 with pdfplumber.open("toa.pdf") as pdf:
-    first_page = pdf.pages[0]
     for idx, page in enumerate(pdf.pages):
+        if idx == 0:
+            continue
         print(f"-----page:{idx}")
         if page.annots:
             for annot in page.annots:
@@ -11,6 +12,8 @@ with pdfplumber.open("toa.pdf") as pdf:
                     if "data" in annot and annot['data']:
                         if 'FT' in annot['data']:
                             print(f"FT:{annot['data']['FT']}")
+                        if 'CA' in annot['data']:
+                            print(f"CA:{annot['data']['CA']}")
                         # if 'T' in annot['data']:
                         #     print(f"T:{annot['data']['T']}")
                         if 'V' in annot['data']:

@@ -1,0 +1,28 @@
+/Users/ryan/labs/pdf_labs/venv/bin/python /Users/ryan/github/pdf/1.py
+-----page:1
+title:Type
+FT:/'Btn'
+V:/'Off'
+
+title:Type
+FT:/'Btn'
+V:/'2'
+
+title:Type
+FT:/'Btn'
+V:/'3'
+
+title:Type2
+FT:/'Btn'
+V:/'2'
+
+title:Type2
+FT:/'Btn'
+V:/'5'
+-----page:2
+title:DRIP
+FT:/'Btn'
+V:/'2'
+-----page:3
+
+Process finished with exit code 0
